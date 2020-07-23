@@ -1,0 +1,14 @@
+{
+  "name": "contact-form-mailer",
+  "version": "1.0.0",
+  "description": "Lambda contact form mailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Darnell Andries",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.714.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "body": "{\"message\": \"test msg\", \"email\": \"dtest2@mailinator.com\", \"name\": \"Test Test\"}",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}

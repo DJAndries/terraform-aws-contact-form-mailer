@@ -1,0 +1,5 @@
+files
+lambda_src/node_modules
+*.tfstate*
+.terraform
+*.tfvars
