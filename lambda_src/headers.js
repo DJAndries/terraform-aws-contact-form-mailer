@@ -10,7 +10,7 @@ function genHeaders(event) {
   if (allowedOrigin !== '*') {
     const origins = allowedOrigin.split(',');
     let headerAllowedOrigin = origins[0];
-    const requestOrigin = event.headers['Origin'];
+    const requestOrigin = event.headers['Origin'] || event.headers['origin'];
     
     if (!!requestOrigin && origins.find((v) => v.toLowerCase() === requestOrigin.toLowerCase())) {
       // Dynamically set allow-origin based on request origin
