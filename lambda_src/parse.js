@@ -26,7 +26,7 @@ function validateAndParseRequest(event) {
     throw new AppError(400, 'Must be POST request');
   }
 
-  const contentType = event.headers['Content-Type'];
+  const contentType = event.headers['Content-Type'] || event.headers['content-type'];
   if (!contentType || !contentType.startsWith('application/json')) {
     throw new AppError(400, 'Content must be JSON');
   }
